@@ -1,8 +1,8 @@
 let VehicleType = require('./VehicleType.js');
 
 class Vehicle {
-  constructor(barcode, status, userId, VehicleType, parkingLot) {
-    this.details = { barcode, status, userId, VehicleType, parkingLot };
+  constructor(barcode, status, user, VehicleType, parkingLot) {
+    this.details = { barcode, status, user, VehicleType, parkingLot };
   }
   setId(uuid) {
     this.details.id = uuid;

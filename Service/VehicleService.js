@@ -3,17 +3,18 @@ let VehicleManager = require('./../Manager/VehicleManager.js');
 
 class VehicleService extends VehicleManager {
   constructor() {
-
+    super()
   };
   addVehicleService(vehicle) {
-    return VehicleManager.addVehicle(vehicle);
+    return super.addVehicle(vehicle);
   }
   returnAllVehiclesService() {
-    return VehicleManager.returnAllVehicles();
+    return super.returnAllVehicles();
   }
   returnRentedVehiclesService() {
-    return VehicleManager.returnRentedVehicles();
+    return super.returnRentedVehicles();
   }
 };
+
 
 module.exports = VehicleService;
